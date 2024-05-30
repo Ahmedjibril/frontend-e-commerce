@@ -190,7 +190,7 @@
 
     .cartitems-total {
         flex-direction: column; /* Adjusted layout for mobile */
-        margin: 0;
+        margin: 20p;
         gap: 20px;
     }
 

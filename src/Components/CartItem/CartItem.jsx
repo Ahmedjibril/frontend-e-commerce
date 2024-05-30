@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './CartItem.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
+import { useDispatch } from 'react-redux'
 const CartItem = () => {
-const {getTotalCartAmount,all_product, cartItems ,removeFromCart} =useContext(ShopContext);
-  return (
+    const {getTotalCartItems} = useContext(ShopContext);
+// const dispatch = useDispatch()
+const {getTotalCartAmount,all_product, cartItems ,removeFromCart} =useContext(ShopContext); 
+return (
     <div className='cartitems'>
         <div className="cartitems-main-format ">
             <p>Product</p>
